@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Organization",
+  "id" : "ORG1",
+  "meta" : {
+    "profile" : [
+      "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl"
+    ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"ORG1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreOrganizacionCl.html\">CL Organización</a></p></div><p><b>identifier</b>: id: 05</p><p><b>active</b>: true</p><p><b>name</b>: Hospital Universitario de Endor 5</p></div>"
+  },
+  "identifier" : [
+    {
+      "system" : "http://minsal.cl/deis/codigodeis",
+      "value" : "05"
+    }
+  ],
+  "active" : true,
+  "name" : "Hospital Universitario de Endor 5",
+  "alias" : [
+    "Hospital grupo 5"
+  ]
+}
