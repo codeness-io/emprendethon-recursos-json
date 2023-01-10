@@ -1,0 +1,39 @@
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [
+      "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+        "code": "no-known-medication-allergies",
+        "display": "No known medication allergies"
+      }
+    ],
+    "text": "Sin alergias medicamentosas conocidas"
+  },
+  "subject": {
+    "reference": "Patient/X"
+  }
+}
