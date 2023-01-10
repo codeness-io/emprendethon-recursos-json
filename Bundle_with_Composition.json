@@ -1,7 +1,7 @@
 {
   "resourceType": "Bundle",
   "id": "id-bundle",
-  "type": "collection",
+  "type": "document",
   "meta" : {
     "profile" : [
       "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl"
@@ -434,6 +434,108 @@
         "subject": {
           "reference": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
         }
+      }
+    },
+    {
+      "fullUrl" : "urn:uuid:5675c8a7-8ab9-4ce3-8fed-33ecfd94fd9d",
+      "resource" : {
+        "resourceType" : "Composition",
+        "id" : "5675c8a7-8ab9-4ce3-8fed-33ecfd94fd9d",
+        "meta" : {
+          "profile" : [
+            "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl"
+          ]
+        },
+        "status" : "final",
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "60591-5",
+              "display" : "Patient Summary Document"
+            }
+          ]
+        },
+        "subject" : {
+          "reference" : "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
+        },
+        "date" : "2023-01-10T13:00:00-03:00",
+        "author" : [
+          {
+            "reference" : "urn:uuid:528368bb-d507-4376-800a-62180bd087a5"
+          }
+        ],
+        "title" : "Caso uso Emprendethon - Grupo 5",
+        "section" : [
+          {
+            "title" : "Alergias",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "48765-2",
+                  "display" : "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "entry" : [
+              {
+                "reference" : "urn:uuid:ff4dd68f-55ae-48ca-93ac-66f8327ff20d"
+              }
+            ]
+          },
+          {
+            "title" : "Diagnósticos",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11450-4",
+                  "display" : "Problem list - Reported"
+                }
+              ]
+            },
+            "entry" : [
+              {
+                "reference" : "urn:uuid:0a455992-1c5f-403f-97af-f932e369434b"
+              }
+            ]
+          },
+          {
+            "title" : "Diagnósticos",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11450-4",
+                  "display" : "Problem list - Reported"
+                }
+              ]
+            },
+            "entry" : [
+              {
+                "reference" : "urn:uuid:0103f6d5-ce34-43a2-a194-1b2137a307a9"
+              }
+            ]
+          },
+          {
+            "title" : "Diagnósticos",
+            "code" : {
+              "coding" : [
+                {
+                  "system" : "http://loinc.org",
+                  "code" : "11450-4",
+                  "display" : "Problem list - Reported"
+                }
+              ]
+            },
+            "entry" : [
+              {
+                "reference" : "urn:uuid:30c381e4-8273-48ce-8774-aeb926352c35"
+              }
+            ]
+          }
+        ]
       }
     }
   ]
