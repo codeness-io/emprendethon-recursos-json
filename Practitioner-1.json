@@ -1,0 +1,69 @@
+{
+  "resourceType": "Practitioner",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ruth Skywalker Soriano es una profesional médica de género femenino con RUT \"33111444-6\". Tiene dos calificaciones: un \"Certificado Profesional Médico Cirujano\" y una especialización en \"Oncología Médica\".</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://api_run/run",
+      "value": "33111444-6"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Skywalker",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "Soriano"
+          }
+        ]
+      },
+      "given": [
+        "Ruth"
+      ]
+    }
+  ],
+  "gender": "female",
+  "qualification": [
+    {
+      "identifier": [
+        {
+          "value": "cert"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "https://api.minsal.cl/v1/catalogos/profesiones/",
+            "code": "2112",
+            "display": "Certificado Profesional Médico Cirujano"
+          }
+        ],
+        "text": "Certificado(s)"
+      }
+    },
+    {
+      "identifier": [
+        {
+          "value": "esp"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL",
+            "code": "45",
+            "display": "Oncología Médica"
+          }
+        ],
+        "text": "Especialidad(es)"
+      }
+    }
+  ]
+}
