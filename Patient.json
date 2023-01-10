@@ -1,0 +1,136 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PacienteCL",
+  "meta" : {
+    "profile" : [
+      "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
+    ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jan-Solo</b> male, DoB: 1961-04-03 ( Chile: 66.2345.333-1 (OFFICIAL))</p></div>"
+  },
+  "identifier" : [
+    {
+      "use" : "official",
+      "type" : {
+        "extension" : [
+          {
+            "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "urn:iso:std:iso:3166",
+                  "code" : "CL",
+                  "display" : "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "coding" : [
+          {
+            "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI",
+            "code" : "NNCHL",
+            "display" : "Chile"
+          }
+        ]
+      },
+      "system" : "http://regcivil.cl/Validacion/RUN",
+      "value" : "66.2345.333-1"
+    }
+  ],
+  "active" : true,
+  "name" : [
+    {
+      "use" : "official",
+      "family" : "Organa",
+      "_family" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString" : "de la Rosa"
+          }
+        ]
+      },
+      "given" : [
+        "Jan-Solo",
+        "" //Número del equipo
+      ]
+    }
+  ],
+  "gender" : "male",
+  "birthDate" : "1961-04-03",
+  "address" : [
+    {
+      "use" : "home",
+      "line" : [
+        "Av Los Caudillos, número 67"
+      ],
+      "_city" : {
+        "extension" : [
+          {
+            "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL",
+                  "code" : "05101",
+                  "display" : "Valparaíso"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_district" : {
+        "extension" : [
+          {
+            "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL",
+                  "code" : " 051",
+                  "display" : "Valparaíso"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_state" : {
+        "extension" : [
+          {
+            "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL",
+                  "code" : "05",
+                  "display" : "Valparaíso"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_country" : {
+        "extension" : [
+          {
+            "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept" : {
+              "coding" : [
+                {
+                  "system" : "urn:iso:std:iso:3166",
+                  "code" : "CL",
+                  "display" : "Chile"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
