@@ -35,6 +35,5 @@
   },
   "subject": {
     "reference": "Patient/X"
-  },
-  "onsetDateTime": "2022-10-15"
+  }
 }
