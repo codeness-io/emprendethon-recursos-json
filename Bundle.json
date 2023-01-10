@@ -1,256 +1,21 @@
 {
   "resourceType": "Bundle",
-  "id": "id-bundle",
-  "type": "collection",
-  "meta" : {
-    "profile" : [
+  "id": "BundleId",
+  "meta": {
+    "profile": [
       "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl"
     ]
   },
+  "identifier": {
+    "system": "http://sistema.cl/Transacciones/",
+    "value": "Bundle-05"
+  },
+  "type": "document",
+  "timestamp": "2023-01-10T15:00:00-03:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:485c8243-f1b8-4e0b-8883-14c508ec1599",
-      "resource":  {
-        "resourceType" : "Organization",
-        "id" : "485c8243-f1b8-4e0b-8883-14c508ec1599",
-        "meta" : {
-          "profile" : [
-            "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl"
-          ]
-        },
-        "text" : {
-          "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"ORG1\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CoreOrganizacionCl.html\">CL Organización</a></p></div><p><b>identifier</b>: id: 05</p><p><b>active</b>: true</p><p><b>name</b>: Hospital Universitario de Endor 5</p></div>"
-        },
-        "identifier" : [
-          {
-            "system" : "http://minsal.cl/deis/codigodeis",
-            "value" : "05"
-          }
-        ],
-        "active" : true,
-        "name" : "Hospital Universitario de Endor 5",
-        "alias" : [
-          "Hospital grupo 5"
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d",
+      "fullUrl": "urn:uuid:ff4dd68f-55ae-48ca-93ac-66f8327ff20d",
       "resource": {
-        "resourceType": "Patient",
-        "id": "bd5b58fe-6a20-46ec-9585-d07629f6048d",
-        "meta": {
-          "profile": [
-            "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Jan-Solo</b> male, DoB: 1961-04-03 ( Chile: 66.2345.333-1 (OFFICIAL))</p></div>"
-        },
-        "identifier": [
-          {
-            "use": "official",
-            "type": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "urn:iso:std:iso:3166",
-                        "code": "CL",
-                        "display": "Chile"
-                      }
-                    ]
-                  }
-                }
-              ],
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI",
-                  "code": "NNCHL",
-                  "display": "Chile"
-                }
-              ]
-            },
-            "system": "http://regcivil.cl/Validacion/RUN",
-            "value": "66.2345.333-1"
-          }
-        ],
-        "active": true,
-        "generalPractitioner": "urn:uuid:485c8243-f1b8-4e0b-8883-14c508ec1599",
-        "name": [
-          {
-            "use": "official",
-            "family": "Organa",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
-                  "valueString": "de la Rosa"
-                }
-              ]
-            },
-            "given": [
-              "Jan-Solo",
-              "5"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1961-04-03",
-        "address": [
-          {
-            "use": "home",
-            "line": [
-              "Av Los Caudillos, número 67"
-            ],
-            "_city": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL",
-                        "code": "05101",
-                        "display": "Valparaíso"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_district": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL",
-                        "code": " 051",
-                        "display": "Valparaíso"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_state": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL",
-                        "code": "05",
-                        "display": "Valparaíso"
-                      }
-                    ]
-                  }
-                }
-              ]
-            },
-            "_country": {
-              "extension": [
-                {
-                  "url": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
-                  "valueCodeableConcept": {
-                    "coding": [
-                      {
-                        "system": "urn:iso:std:iso:3166",
-                        "code": "CL",
-                        "display": "Chile"
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl" : "urn:uuid:528368bb-d507-4376-800a-62180bd087a5",
-      "resource" : {
-        "resourceType": "Practitioner",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ruth Skywalker Soriano es una profesional médica de género femenino con RUT \"33111444-6\". Tiene dos calificaciones: un \"Certificado Profesional Médico Cirujano\" y una especialización en \"Oncología Médica\".</div>"
-        },
-        "id":"528368bb-d507-4376-800a-62180bd087a5",
-        "identifier": [
-          {
-            "use": "official",
-            "system": "http://api_run/run",
-            "value": "33111444-6"
-          }
-        ],
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "family": "Skywalker",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
-                  "valueString": "Soriano"
-                }
-              ]
-            },
-            "given": [
-              "Ruth"
-            ]
-          }
-        ],
-        "gender": "female",
-        "qualification": [
-          {
-            "identifier": [
-              {
-                "value": "cert"
-              }
-            ],
-            "code": {
-              "coding": [
-                {
-                  "system": "https://api.minsal.cl/v1/catalogos/profesiones/",
-                  "code": "2112",
-                  "display": "Certificado Profesional Médico Cirujano"
-                }
-              ],
-              "text": "Certificado(s)"
-            }
-          },
-          {
-            "identifier": [
-              {
-                "value": "esp"
-              }
-            ],
-            "code": {
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSEspecialidadesDeisCL",
-                  "code": "45",
-                  "display": "Oncología Médica"
-                }
-              ],
-              "text": "Especialidad(es)"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl" : "urn:uuid:ff4dd68f-55ae-48ca-93ac-66f8327ff20d",
-      "resource" : {
         "resourceType": "Condition",
         "text": {
           "status": "generated",
@@ -291,13 +56,13 @@
           "text": "Sin alergias medicamentosas conocidas"
         },
         "subject": {
-          "reference": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
+          "reference": "Patient/7710"
         }
       }
     },
     {
-      "fullUrl" : "urn:uuid:0a455992-1c5f-403f-97af-f932e369434b",
-      "resource" : {
+      "fullUrl": "urn:uuid:0a455992-1c5f-403f-97af-f932e369434b",
+      "resource": {
         "resourceType": "Condition",
         "text": {
           "status": "generated",
@@ -338,13 +103,13 @@
           "text": "Exfumador de 1 paquete/ día hace 13 años"
         },
         "subject": {
-          "reference": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
+          "reference": "Patient/7710"
         }
       }
     },
     {
-      "fullUrl" : "urn:uuid:0103f6d5-ce34-43a2-a194-1b2137a307a9",
-      "resource" : {
+      "fullUrl": "urn:uuid:0103f6d5-ce34-43a2-a194-1b2137a307a9",
+      "resource": {
         "resourceType": "Condition",
         "text": {
           "status": "generated",
@@ -385,13 +150,13 @@
           "text": "Bebedor de un vaso de vino en las comidas"
         },
         "subject": {
-          "reference": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
+          "reference": "Patient/7710"
         }
       }
     },
     {
-      "fullUrl" : "urn:uuid:30c381e4-8273-48ce-8774-aeb926352c35",
-      "resource" : {
+      "fullUrl": "urn:uuid:30c381e4-8273-48ce-8774-aeb926352c35",
+      "resource": {
         "resourceType": "Condition",
         "text": {
           "status": "generated",
@@ -432,7 +197,7 @@
           "text": "Sin antecedes familiares de neoplasias digestivas"
         },
         "subject": {
-          "reference": "urn:uuid:bd5b58fe-6a20-46ec-9585-d07629f6048d"
+          "reference": "Patient/7710"
         }
       }
     }
